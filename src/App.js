@@ -83,6 +83,8 @@ const App = () => {
         type={element.type}
         price={element.price}
         img={element.img}
+        isAvailable={element.isAvailable}
+        onSale={element.onSale}
         
         
       />

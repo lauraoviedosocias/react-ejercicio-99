@@ -27,3 +27,7 @@ img {
 h1 {
     font-size: 16px;
 }
+
+.notAvailable {
+    background-color: lightslategray;
+}

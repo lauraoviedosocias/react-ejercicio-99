@@ -1,10 +1,10 @@
 import "./Card.css";
 
-const Card = ({title, type, price, img}) => {
+const Card = ({title, type, price, img, isAvailable, onSale}) => {
 
 
     return (
-        <div className="card">
+        <div className={`card ${isAvailable === false && "notAvailable"}`}>
             <div className="image-container">
                 <img src={img}/>
             </div>
@@ -15,6 +15,7 @@ const Card = ({title, type, price, img}) => {
                 <p>{type}</p>
                 <p>{price}</p>
             </div>
+            {onSale === true && <p>ON SALE</p>}
         </div>
     )
 }
